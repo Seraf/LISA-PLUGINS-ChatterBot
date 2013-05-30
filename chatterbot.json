@@ -1,0 +1,11 @@
+{
+    "name": "ChatterBot",
+    "version": "1.0",
+    "author": "Julien Syx",
+    "description_fr": "Ce plugin est celui par défaut intégrant les interactions basiques avec JARVIS",
+    "description_en": "This plugin is shipped by default, managing all basic interactions with JARVIS",
+    "description_ru": "Этот плагин по умолчанию интеграции основных взаимодействий с JARVIS",
+    "enabled": 1,
+    "lang": ["fr","en","ru"],
+    "configuration": {}
+}
