@@ -1,6 +1,3 @@
-! var name = jarvis
-! global debug = true
-
 + il est quelle heure[*]
 - <call>gettime</call>
 
@@ -30,9 +27,6 @@
 + [*] (fuck|fucker|shit|damn|shut up|bitch|encule|connard|con) [*]
 - Ca y'est? Vous vous sentez mieux?
 - Vous êtes enervé je suppose?
-
-+ chat test
-- chat OK
 
 > object gettime python
 import sys, os, inspect

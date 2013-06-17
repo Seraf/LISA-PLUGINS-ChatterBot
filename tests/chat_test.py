@@ -1,7 +1,8 @@
-from jarvis import JarvisFactory
-import json
+import json, os, sys
 from twisted.trial import unittest
 from twisted.test import proto_helpers
+sys.path.append(os.path.normpath(os.path.join(os.path.abspath("../../../"))))
+from jarvis import JarvisFactory, configuration
 
 class ChatTestCase(unittest.TestCase):
     def setUp(self):
@@ -21,4 +22,7 @@ class ChatTestCase(unittest.TestCase):
 
 
     def test_hello(self):
-        return self._test(sentence='chat test', expected='chat OK')
+        if configuration['lang'] == 'en':
+            return self._test(sentence='chat test', expected='chat OK')
+        elif configuration['lang'] == 'fr':
+            return self._test(sentence='Bonjour', expected='Bonjour. Comment allez vous ?')

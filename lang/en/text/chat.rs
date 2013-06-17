@@ -1,8 +1,5 @@
 // A generic set of chatting responses. This set mimicks the classic Eliza bot.
 
-! var name = jarvis
-! global debug = true
-
 + chat test
 - chat OK
 
