@@ -3,6 +3,9 @@
 ! var name = jarvis
 ! global debug = true
 
++ chat test
+- chat OK
+
 + *
 - I'm not sure I understand you fully.
 - Please go on.

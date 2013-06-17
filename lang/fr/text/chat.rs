@@ -31,6 +31,9 @@
 - Ca y'est? Vous vous sentez mieux?
 - Vous êtes enervé je suppose?
 
++ chat test
+- chat OK
+
 > object gettime python
 import sys, os, inspect
 cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split( \
