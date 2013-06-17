@@ -3,7 +3,7 @@ import json
 from twisted.trial import unittest
 from twisted.test import proto_helpers
 
-class JarvisTestCase(unittest.TestCase):
+class ChatTestCase(unittest.TestCase):
     def setUp(self):
         factory = JarvisFactory()
         self.proto = factory.buildProtocol(('127.0.0.1', 0))
