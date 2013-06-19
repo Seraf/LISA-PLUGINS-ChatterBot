@@ -26,3 +26,9 @@ class ChatTestCase(unittest.TestCase):
             return self._test(sentence='chat test', expected='chat OK')
         elif configuration['lang'] == 'fr':
             return self._test(sentence='Bonjour', expected='Bonjour. Comment allez vous ?')
+
+    def test_time(self):
+        from datetime import datetime
+        if configuration['lang'] == 'fr':
+            now = datetime.now()
+            return self._test(sentence='il est quelle heure', expected=now.strftime("Il est %H heures et %M minutes"))
