@@ -2,11 +2,11 @@ import json, os, sys
 from twisted.trial import unittest
 from twisted.test import proto_helpers
 sys.path.append(os.path.normpath(os.path.join(os.path.abspath("../../../"))))
-from jarvis import JarvisFactory, configuration
+from lisa import LisaFactory, configuration
 
 class ChatTestCase(unittest.TestCase):
     def setUp(self):
-        factory = JarvisFactory()
+        factory = LisaFactory()
         self.proto = factory.buildProtocol(('127.0.0.1', 0))
         self.tr = proto_helpers.StringTransport()
         self.proto.makeConnection(self.tr)
