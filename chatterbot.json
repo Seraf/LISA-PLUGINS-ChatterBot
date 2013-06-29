@@ -1,10 +1,12 @@
 {
     "name": "ChatterBot",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "author": "Julien Syx",
-    "description_fr": "Ce plugin est celui par défaut intégrant les interactions basiques avec LISA",
-    "description_en": "This plugin is shipped by default, managing all basic interactions with LISA",
-    "description_ru": "Этот плагин по умолчанию интеграции основных взаимодействий с LISA",
+    "description": [
+        {"description_fr": "Ce plugin est celui par défaut intégrant les interactions basiques avec LISA"},
+        {"description_en": "This plugin is shipped by default, managing all basic interactions with LISA"},
+        {"description_ru": "Этот плагин по умолчанию интеграции основных взаимодействий с LISA"}
+    ],
     "enabled": 1,
     "lang": ["fr","en","ru"],
     "configuration": {}
