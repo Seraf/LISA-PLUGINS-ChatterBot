@@ -16,6 +16,6 @@ def widget1(request, x, y):
     return render_to_response(os.path.abspath(os.path.dirname(__file__) + '/templates/widget.html'),
                               {
                                   'content': str(content['body']), 'data_sizex': "1", 'data_sizey': "1",
-                                  'data-row': x, 'data-col': y
+                                  'data_row': y, 'data_col': x
                               },
                               context_instance=RequestContext(request))
