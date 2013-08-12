@@ -11,8 +11,8 @@ except ImportError:
 
 @login_required()
 def widget1(request, x, y):
-    from ChatterBot.modules.chat import Chat
-    content = json.loads(Chat().getTime())
+    from ChatterBot.modules.chatterbot import ChatterBot
+    content = json.loads(ChatterBot().getTime())
     return render_to_response(os.path.abspath(os.path.dirname(__file__) + '/templates/widget.html'),
                               {
                                   'content': str(content['body']), 'data_sizex': "1", 'data_sizey': "1",

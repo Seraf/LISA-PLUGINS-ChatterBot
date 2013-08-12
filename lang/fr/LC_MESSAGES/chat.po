@@ -14,3 +14,6 @@ msgstr ""
 #: ../../modules/chat.py
 msgid "time"
 msgstr "Il est %H heures et %M minutes"
+
+msgid "Hello. How are you ?"
+msgstr "Bonjour. Comment allez vous ?"

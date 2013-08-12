@@ -40,10 +40,10 @@ class ChatterBotResource(resources.Resource):
 
     def gettime(self, request, **kwargs):
         from tastypie.http import HttpAccepted
-        from ChatterBot.modules.chat import Chat
+        from ChatterBot.modules.chatterbot import ChatterBot
 
         self.method_check(request, allowed=['get'])
         self.is_authenticated(request)
         self.throttle_check(request)
         self.log_throttled_access(request)
-        return self.create_response(request, { 'status': 'success', 'content': json.loads(Chat().getTime())}, HttpAccepted)
+        return self.create_response(request, { 'status': 'success', 'content': json.loads(ChatterBot().getTime())}, HttpAccepted)
