@@ -1,6 +1,6 @@
 {
     "name": "ChatterBot",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "author": "Julien Syx",
     "description": [
         {"lang": "fr", "description": "Ce plugin est celui par défaut intégrant les interactions basiques avec LISA"},
