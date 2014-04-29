@@ -1,16 +1,16 @@
 import json, os, sys
 from twisted.trial import unittest
 from twisted.test import proto_helpers
-sys.path.append(os.path.normpath(os.path.join(os.path.abspath("../../../"))))
-import libs
-from lisa import configuration
+from lisa.server.libs import LisaInstance
+from lisa.server.service import configuration
 
 class ChatTestCase(unittest.TestCase):
     def setUp(self):
-        factory = libs.LisaInstance
+        factory = LisaInstance
         self.proto = factory.buildProtocol(('127.0.0.1', 0))
         self.tr = proto_helpers.StringTransport()
         self.proto.makeConnection(self.tr)
+        print "OK"
 
 
     def _test(self, sentence, expected):
@@ -18,6 +18,8 @@ class ChatTestCase(unittest.TestCase):
                                             "from": "Test",
                                             "body": '%s' % (sentence)
         }))
+        print "============"
+        print self.tr.value()
         jsonAnswer = json.loads(self.tr.value())
         self.assertEqual(jsonAnswer['body'], expected)
 

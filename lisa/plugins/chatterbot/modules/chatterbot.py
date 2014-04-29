@@ -1,21 +1,16 @@
 # -*- coding: UTF-8 -*-
 from datetime import datetime
 import json, os, inspect
-from pymongo import MongoClient
-from lisa import configuration
-
+from lisa.server.plugins.IPlugin import IPlugin
 import gettext
 
 path = os.path.realpath(os.path.abspath(os.path.join(os.path.split(
     inspect.getfile(inspect.currentframe()))[0],os.path.normpath("../lang/"))))
 _ = translation = gettext.translation(domain='chat', localedir=path, languages=[configuration['lang']]).ugettext
 
-class ChatterBot:
+class ChatterBot(IPlugin):
     def __init__(self, lisa=None):
-        self.lisa = lisa
-        self.configuration_lisa = configuration
-        mongo = MongoClient(host=self.configuration_lisa['database']['server'],
-                            port=self.configuration_lisa['database']['port'])
+        super(ChatterBot, self).__init__()
         self.configuration = mongo.lisa.plugins.find_one({"name": "ChatterBot"})
 
     def getTime(self, jsonInput):
