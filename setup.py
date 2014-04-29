@@ -1,7 +1,7 @@
 from setuptools import setup
 import json
 
-metadata = json.loads(open('lisa/plugins/chatterbot/chatterbot.json').read())
+metadata = json.loads(open('lisa/plugins/ChatterBot/chatterbot.json').read())
 
 def listify(filename):
     return filter(None, open(filename, 'r').read().strip('\n').split('\n'))
@@ -9,7 +9,7 @@ def listify(filename):
 if __name__ == '__main__':
     setup(
         version=metadata['version'],
-        name='lisa-plugin-chatterbot',
+        name='lisa-plugin-ChatterBot',
         packages=["lisa.plugins"],
         url='http://www.lisa-project.net',
         license='MIT',
