@@ -1,3 +1,3 @@
 __author__ = 'julien'
-from web import *
-from modules import *
+from lisa.plugins.ChatterBot.web import *
+from lisa.plugins.ChatterBot.modules import *
