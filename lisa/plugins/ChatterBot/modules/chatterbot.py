@@ -1,27 +1,29 @@
 # -*- coding: UTF-8 -*-
 from datetime import datetime
-import json, os, inspect
 from lisa.server.plugins.IPlugin import IPlugin
 import gettext
-
-path = os.path.realpath(os.path.abspath(os.path.join(os.path.split(
-    inspect.getfile(inspect.currentframe()))[0],os.path.normpath("../lang/"))))
-_ = translation = gettext.translation(domain='chat', localedir=path, languages=[configuration['lang']]).ugettext
+import inspect
+import os
 
 class ChatterBot(IPlugin):
-    def __init__(self, lisa=None):
+    def __init__(self):
         super(ChatterBot, self).__init__()
-        self.configuration = mongo.lisa.plugins.find_one({"name": "ChatterBot"})
+        self.configuration_plugin = self.mongo.lisa.plugins.find_one({"name": "ChatterBot"})
+        self.path = os.path.realpath(os.path.abspath(os.path.join(os.path.split(
+            inspect.getfile(inspect.currentframe()))[0],os.path.normpath("../lang/"))))
+        self._ = translation = gettext.translation(domain='chatterbot',
+                                                   localedir=self.path,
+                                                   languages=[self.configuration_lisa['lang']]).ugettext
 
     def getTime(self, jsonInput):
         now = datetime.now()
         return {"plugin": "ChatterBot",
                 "method": "getTime",
-                "body": now.strftime(_('time'))
+                "body": now.strftime(self._('time'))
         }
 
     def sayHello(self, jsonInput):
         return {"plugin": "ChatterBot",
                 "method": "sayHello",
-                "body": _('Hello. How are you ?')
+                "body": self._('Hello. How are you ?')
         }
