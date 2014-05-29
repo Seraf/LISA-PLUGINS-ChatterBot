@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: chatterbot 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-29 17:38+0200\n"
+"POT-Creation-Date: 2014-05-29 18:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../modules/chatterbot.py:23
-#, python-format
-msgid "It is %(hour)s:%(minute)s"
+msgid "It is %H:%M"
 msgstr ""
 
-#: ../modules/chatterbot.py:30
+#: ../modules/chatterbot.py:29
 msgid "Hello. How are you ?"
 msgstr ""

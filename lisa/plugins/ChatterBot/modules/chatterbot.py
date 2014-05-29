@@ -20,8 +20,7 @@ class ChatterBot(IPlugin):
         now = datetime.now()
         return {"plugin": "ChatterBot",
                 "method": "getTime",
-                "body": now.strftime(self._('It is %(hour)s:%(minute)s' % {'hour': '%H',
-                                                                           'minute': '%M'}))
+                "body": now.strftime(self._('It is %H:%M'))
         }
 
     def sayHello(self, jsonInput):

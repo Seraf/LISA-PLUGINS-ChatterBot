@@ -5,7 +5,7 @@
     "enabled": 1,
     "pypi-url": "https://pypi.python.org/pypi/lisa-plugin-ChatterBot",
     "github-url": "https://raw.githubusercontent.com/Seraf/LISA-PLUGINS-ChatterBot/master/lisa/plugins/ChatterBot/chatterbot.json",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "description": [
         {
             "lang": "fr",

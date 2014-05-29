@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LISA-PLUGINS-ChatterBot\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-05-29 17:38+0200\n"
-"PO-Revision-Date: 2014-05-29 15:38+0000\n"
+"POT-Creation-Date: 2014-05-29 18:13+0200\n"
+"PO-Revision-Date: 2014-05-29 16:13+0000\n"
 "Last-Translator: Seraf42 <nephilim.seraphin@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/lisa-plugins-chatterbot/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -18,10 +18,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../modules/chatterbot.py:23
-#, python-format
-msgid "It is %(hour)s:%(minute)s"
+msgid "It is %H:%M"
 msgstr ""
 
-#: ../modules/chatterbot.py:30
+#: ../modules/chatterbot.py:29
 msgid "Hello. How are you ?"
 msgstr ""
