@@ -1,11 +1,11 @@
 {
-    "lang": ["fr", "en", "ru"],
+    "lang": ["fr", "en"],
     "name": "ChatterBot",
     "author": "Julien Syx",
     "enabled": 1,
     "pypi-url": "https://pypi.python.org/pypi/lisa-plugin-ChatterBot",
     "github-url": "https://raw.githubusercontent.com/Seraf/LISA-PLUGINS-ChatterBot/master/lisa/plugins/ChatterBot/chatterbot.json",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "description": [
         {
             "lang": "fr",
@@ -16,11 +16,6 @@
             "lang": "en",
             "description": "This plugin is shipped by default, managing all basic interactions with LISA",
             "wit-instance": "https://wit.ai/Seraf/lisa_en"
-        },
-        {
-            "lang": "ru",
-            "description": "Этот плагин поставляется по умолчанию, управляющий все основные взаимодействия с LISA",
-            "wit-instance": "https://wit.ai/Seraf/lisa_ru"
         }
     ],
     "configuration": {

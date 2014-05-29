@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Seraf42 <nephilim.seraphin@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: LISA-PLUGINS-ChatterBot\n"
@@ -11,18 +10,18 @@ msgstr ""
 "POT-Creation-Date: 2014-05-29 17:38+0200\n"
 "PO-Revision-Date: 2014-05-29 15:38+0000\n"
 "Last-Translator: Seraf42 <nephilim.seraphin@gmail.com>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/lisa-plugins-chatterbot/language/fr/)\n"
+"Language-Team: Turkish (http://www.transifex.com/projects/p/lisa-plugins-chatterbot/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
+"Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../modules/chatterbot.py:23
 #, python-format
 msgid "It is %(hour)s:%(minute)s"
-msgstr "Il est %(hour)s heures et %(minute)s minutes"
+msgstr ""
 
 #: ../modules/chatterbot.py:30
 msgid "Hello. How are you ?"
-msgstr "Bonjour. Comment allez vous ?"
+msgstr ""

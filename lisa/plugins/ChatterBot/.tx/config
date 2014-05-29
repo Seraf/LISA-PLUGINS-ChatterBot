@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+type = PO
+
+[lisa-plugins-chatterbot.chatterbot]
+file_filter = lang/<lang>/LC_MESSAGES/chatterbot.po
+source_file = lang/chatterbot.pot
+source_lang = en
+
